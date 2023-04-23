@@ -9,10 +9,11 @@ export default NextAuth({
         }),
         CredentialsProvider({
            name:"NextAuthCredentials",
-           credencials:{},
+           credentials:{},
             async authorize(credentials) {
                 console.log(credentials)
                 return{
+                    id: "1",
                     name:"marcos",
                     email:"marcospegodesousa10@gmail.com",
                     image:"gsds"
